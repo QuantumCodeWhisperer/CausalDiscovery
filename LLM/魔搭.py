@@ -12,9 +12,9 @@ class LLM:
     """
     本模型用于因果发现。
     """
-    def __init__(self,key="dc8df87a-25c9-40eb-8059-b9e0627c6a63",
-                 url="https://api-inference.modelscope.cn/v1/",
-                 model="deepseek-ai/DeepSeek-R1"):
+    def __init__(self,key="",
+                 url="",
+                 model=""):
         self.client = OpenAI(api_key=key, base_url=url)
         self.model = model
         self.answer = ""
